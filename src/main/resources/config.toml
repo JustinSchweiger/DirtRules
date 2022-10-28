@@ -1,0 +1,19 @@
+# Configuration file for Dirt-Rules
+
+[general]
+# Wether to log debug commands.
+debug = true
+# What interval should be used to remind players to accept the rules?
+# The value specified is in seconds.
+rulesReminderInterval = 30
+# Wether the rules should have the same amount of items in the gui as the rule index.
+# If this is set to false, the rules will be displayed with 1 item each.
+incrementingAmountOfItems = false
+# Wether to ignore staff players when reminding players to accept the rules.
+ignoreStaff = false
+
+[sound]
+# Wether to play a sound when players are reminded to accept the rules.
+playReminderSound = true
+# The sound to play when players are reminded to accept the rules.
+reminderSound = "minecraft:block.anvil.place"

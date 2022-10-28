@@ -1,0 +1,40 @@
+name: DirtRules
+version: '${version}'
+main: net.dirtcraft.plugins.dirtrules.DirtRules
+api-version: 1.16
+authors: [ DeJustinHD ]
+description: Adds a rule GUI that players have to complete.
+commands:
+    dirtrules:
+        description: Base command for the plugin.
+    rules:
+        description: Opens the rules GUI.
+
+permissions:
+    dirtrules.player:
+        description: Standard permissions for players.
+        children:
+            dirtrules.base: true
+            dirtrules.list: true
+    dirtrules.helper:
+        description: Permissions for helpers.
+        children:
+            dirtrules.base: true
+            dirtrules.list: true
+    dirtrules.mod:
+        description: Permissions for moderators.
+        children:
+            dirtrules.base: true
+            dirtrules.list: true
+            dirtrules.add: true
+            dirtrules.edit: true
+            dirtrules.remove: true
+    dirtrules.admin:
+        description: Permissions for administrators.
+        children:
+            dirtrules.base: true
+            dirtrules.list: true
+            dirtrules.add: true
+            dirtrules.edit: true
+            dirtrules.remove: true
+            dirtrules.reload: true
